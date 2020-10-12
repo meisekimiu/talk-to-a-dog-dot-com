@@ -1,0 +1,17 @@
+header {
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 0em;
+}
+
+header h1 {
+    margin-bottom: -10px;
+}
+
+header h2 {
+    color: #fff;
+    background-color: #00f;
+    width: 100%;
+    padding-bottom: 3px;
+    padding-left: 3px;
+}
