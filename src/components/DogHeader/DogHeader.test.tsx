@@ -1,9 +1,10 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { shallow } from 'enzyme';
 import DogHeader from './DogHeader';
 
-test('renders properly', () => {
-  const { getByText } = render(<DogHeader />);
-  const description = getByText(/TalkToADog.com/i);
-  expect(description).toBeInTheDocument();
+describe('DogHeader', () => {
+    it('renders properly', () => {
+        const wrapper = shallow(<DogHeader />);
+        expect(wrapper.exists()).toBe(true);
+    });
 });
