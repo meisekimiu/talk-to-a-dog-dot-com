@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import "./ChatBox.css";
+import ChatForm from "./ChatForm";
+// import "./ChatBox.css";
 
 enum ChatSender {
     YOU = "you",
@@ -14,6 +15,8 @@ interface ChatMessage {
 }
 
 class ChatBox extends Component<{}, {messages: ChatMessage[]}> {
+    public static chatID: number = 0;
+
     constructor(props: any) {
         super(props);
         this.state = {
@@ -46,11 +49,27 @@ class ChatBox extends Component<{}, {messages: ChatMessage[]}> {
         });
     }
 
+    sendMessage(message: string): void {
+        const messages = this.state.messages.concat([
+            {
+                message,
+                sender: ChatSender.YOU,
+                key: ChatBox.chatID++
+            }
+        ]);
+        this.setState({
+            messages
+        })
+    }
+
     render() {
         return (
             <main>
                 <div className="messages">
                     { this.getChatMessages() }
+                </div>
+                <div className="form">
+                    <ChatForm onSend={this.sendMessage.bind(this)} />
                 </div>
             </main>
         );
