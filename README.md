@@ -1,7 +1,9 @@
 # talk-to-a-dog-dot-com
-Reference to a 7 year old comic NEWLY REMADE in React.
+Reference to a 7 year old comic NEWLY REMADE in React. View it live [here](https://mew151.net/talktoadog/).
 
-![talktoadog.com exists but it sucks and has nothing to do with talking to dogs, i tell you now only so your expectations won't reach the stratospheric heights mine did as you type in the url, only to have them come crashing down as the page loads, the sensation of dreams being crushed as familiar as the stock photo woman with the backpack's smile](https://www.qwantz.com/comics/comic2-2496.png)
+[![talktoadog.com exists but it sucks and has nothing to do with talking to dogs, i tell you now only so your expectations won't reach the stratospheric heights mine did as you type in the url, only to have them come crashing down as the page loads, the sensation of dreams being crushed as familiar as the stock photo woman with the backpack's smile](https://www.qwantz.com/comics/comic2-2496.png)](http://www.qwantz.com/index.php?comic=2485)
+
+The old version which probably doesn't run in modern browsers can be found [here](https://mew151.net/dog/talk2dawgz.html). It was developed with jQuery back when this comic ran in like 2013. Oh god!
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
