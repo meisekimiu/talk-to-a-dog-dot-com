@@ -21,7 +21,8 @@ describe('Chatbox', () => {
                     message: "Bork?",
                     key: 2
                 }
-            ]
+            ],
+            connected: true
         });
         expect(wrapper.find(".message")).toHaveLength(2);
     });
@@ -34,7 +35,8 @@ describe('Chatbox', () => {
                     message: "Hello, World!",
                     key: 1
                 }
-            ]
+            ],
+            connected: true
         });
         expect(wrapper.find(".message > .userMessage")).toHaveLength(1);
         wrapper.setState({
@@ -44,7 +46,8 @@ describe('Chatbox', () => {
                     message: "Hello, World!",
                     key: 1
                 }
-            ]
+            ],
+            connected: true
         });
         expect(wrapper.find(".message > .dogMessage")).toHaveLength(1);
         wrapper.setState({
@@ -54,7 +57,9 @@ describe('Chatbox', () => {
                     message: "Hello, World!",
                     key: 1
                 }
-            ]
+            ],
+            connected: true
+            
         });
         expect(wrapper.find(".message > span")).toHaveLength(0);
     });
