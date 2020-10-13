@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import {DogHeader} from "./components/DogHeader";
 import {ChatBox} from "./components/ChatBox";
+import {Footer} from "./components/Footer";
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
     <DogHeader />
     <ChatBox />
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );

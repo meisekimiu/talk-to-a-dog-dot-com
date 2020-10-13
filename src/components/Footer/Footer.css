@@ -1,0 +1,8 @@
+footer {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0.5em;
+    color: #444;
+}
